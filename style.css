@@ -1,0 +1,70 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 500px;
+}
+
+.grid, .square{
+    border: solid 1px;
+}
+
+#options{
+    display: flex;
+    gap: 10px;
+}
+
+.color-palette{
+    border: solid 1px;
+    display: flex;
+}
+
+.red, .orange, .yellow, .green, .blue, .purple, .black{
+    border: black solid 1px;
+}
+
+.red{
+    background-color: red;
+    width: 21.5px;
+}
+
+.orange{
+    background-color: orange;
+    width: 21.5px;
+}
+
+.yellow{
+    background-color: yellow;
+    width: 21.5px;
+}
+
+.green{
+    background-color: green;
+    width: 21.5px;
+}
+
+.blue{
+    background-color: blue;
+    width: 21.5px;
+}
+
+.purple{
+    background-color: purple;
+    width: 21.5px;
+}
+
+.black{
+    background-color: black;
+    width: 21.5px;
+}
+
+.red:hover, .orange:hover, .yellow:hover, .green:hover, .blue:hover, .purple:hover, .black:hover{
+    border: white solid 1px;
+}
