@@ -1,6 +1,7 @@
-let grid = document.querySelector('.grid');
+const grid = document.querySelector('.grid');
 let color = 'black';
-let dimNums = document.querySelectorAll('.dim');
+const dimNums = document.querySelectorAll('.dim');
+let isGridVisible = true;
 createGrid(16);
 
 //Event listeners
@@ -20,6 +21,10 @@ setSize.addEventListener('click', () => {
     createGrid(dimension);
 });
 
+let toggle = document.querySelector('.toggleGrid');
+toggle.addEventListener('click', () => {
+    toggleGrid();
+});
 
 //color event listeners
 let red = document.querySelector('.red');
@@ -87,4 +92,19 @@ function resetGrid(){
     squares.forEach((square) => {
         square.style.backgroundColor = 'white';
     });
+}
+
+function toggleGrid(){ // FIX ME
+    let squares = document.querySelectorAll('.square');
+    if(isGridVisible === true){
+        squares.forEach((square) => {
+            square.style.border = 'none';
+        });
+        isGridVisible = 'false';
+    }else{
+        squares.forEach((square) => {
+            square.style.border = 'black';
+        });
+        isGridVisible = 'true';
+    }
 }

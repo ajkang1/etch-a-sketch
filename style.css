@@ -22,12 +22,13 @@ body{
 }
 
 .color-palette{
-    border: solid 1px;
     display: flex;
+    gap: 2px;
 }
 
-.red, .orange, .yellow, .green, .blue, .purple, .black{
+button{
     border: black solid 1px;
+    border-radius: 8px;
 }
 
 .red{
@@ -67,4 +68,8 @@ body{
 
 .red:hover, .orange:hover, .yellow:hover, .green:hover, .blue:hover, .purple:hover, .black:hover{
     border: white solid 1px;
+}
+
+.setSize, .resetGrid, .toggleGrid{
+    background-color: white;
 }
